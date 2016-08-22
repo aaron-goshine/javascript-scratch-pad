@@ -20,7 +20,7 @@ var square = function (x) {
 };
 
 // Array map implementation
-var map = Array.prototype.map ? function (a, f) {
+var map = Array.prototype.map_ ? function (a, f) {
   return a.map(f);
 } : function (a, f) {
   var results = [];
@@ -32,7 +32,7 @@ var map = Array.prototype.map ? function (a, f) {
 };
 
 // Reduce an array to single value using a function
-var reduce = Array.prototype.reduce ? function (a, f, initialValue) {
+var reduce = Array.prototype.reduce_ ? function (a, f, initialValue) {
   if (initialValue) {
     return a.reduce(f, initialValue);
   }
@@ -56,6 +56,7 @@ var reduce = Array.prototype.reduce ? function (a, f, initialValue) {
     accumulator = f(accumulator, a[i]);
     i++;
   }
+  return accumulator;
 };
 
 // Test and Demonstration
