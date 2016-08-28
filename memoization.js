@@ -43,4 +43,16 @@ function gcd (a, b) {
   }
 }
 
+/**
+ * computers the factorial of a number
+ *
+ * @name factorial
+ * @function
+ * @param {number} n -
+ * @returns {number} computed result
+ */
+function factorial (n) {
+  return (n <= 1) ? 1 : n * factorial(n - 1);
+}
+
 
