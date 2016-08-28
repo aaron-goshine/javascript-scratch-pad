@@ -55,4 +55,13 @@ function factorial (n) {
   return (n <= 1) ? 1 : n * factorial(n - 1);
 }
 
+/**
+ * Memoized factorial function
+ *
+ * @name memFactorial
+ * @function
+ * @param {number}
+ * @return {number}
+ */
+var memFactorial = memoize(factorial);
 
