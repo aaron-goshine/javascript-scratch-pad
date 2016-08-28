@@ -44,6 +44,17 @@ function gcd (a, b) {
 }
 
 /**
+ * Memoized gcd function
+ *
+ * @name memGcd
+ * @function
+ * @param {number}
+ * @param {number}
+ * @return {number}
+ */
+var memGcd = memoize(gcd);
+
+/**
  * computers the factorial of a number
  *
  * @name factorial
